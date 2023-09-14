@@ -1,9 +1,9 @@
 .slect-fields-wrapper{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
-
 
 .section {
   width: 100%;
@@ -16,100 +16,121 @@
 
 .form-heaidng {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-/* to remove default select field box arrow  */
+@media only screen and (max-width: 572px) {
+  .slect-fields-wrapper{
+    display: flex;
+    justify-content: center;
+  }
 
-/* .select {
-  position: relative;
-  width: 100%;
-  max-width: 220px;
-  height: 50px;
+  .form-heaidng {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.field-icon {
-  position: absolute;
-  top: 11px;
-  left: 10px;
-  z-index: 999;
-}
-
-.select::before {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  z-index: 99;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #333;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(-45deg);
-}
-
-.select.active::before {
-  top: 22px;
-  transform: rotate(-225deg);
-}
-
-.select input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid rgb(194, 194, 194);
-  outline: none;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  padding: 12px 20px;
-  padding-left: 40px;
+.dropdown {
+  width: 230px;
+  display: inline-block;
+  background-color: #fff;
   border-radius: 50px;
-  overflow: hidden;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  padding: 8px 40px;
+  text-align: left
 }
-
-.select .option {
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.field-icon{
   position: absolute;
-  top: 70px;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  overflow: hidden;
-  display: none;
+  left: 12px;
+  margin-top: -2px;
 }
-.select .active {
-  display: block;
+.select-arrow{
+  font-size: 20px;
+  position: absolute;
+  right: 14px;
+}
+.dropdown .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.dropdown:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown:active {
+    background-color: #f8f8f8
+}
+.dropdown.active:hover,
+.dropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 50px;
+    background-color: #f8f8f8
+}
+.dropdown.active .select > i {
+    transform: rotate(-90deg)
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdown .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+.dropdown .dropdown-menu li:hover {
+    background-color: #f2f2f2
+}
+.dropdown .dropdown-menu li:active {
+    background-color: #e2e2e2
 }
 
-.select .option div {
-  padding: 12px 20px;
-  cursor: pointer;
-}
-
-.select .option div:hover {
-  background: #cabb78;
-  color: #fff;
-} */
-
-select {
-  /* for Firefox */
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none;
-}
-
-.select-filed{
-  max-width: 200px;
-}
-.select-filed select{
+.search-btn{
+  width: 230px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  background-color: #162C53;
+  color: #CABB78;
   font-size: 16px;
-  padding: 10px 30px;
-  width: 200px;
-  height: 45px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.search-btn:hover{
+  background-color: #10213f;
 }
