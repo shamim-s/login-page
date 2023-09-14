@@ -57,12 +57,12 @@
 }
 
 .icon-left{
-  width: 20px;
+font-size: 20px;
   position: absolute;
   left: 16px;
 }
 .icon-right{
-  width: 20px;
+  font-size: 20px;
   position: absolute;
   right: 20px;
   cursor: pointer;
@@ -183,7 +183,7 @@
 
 /*---------------- Call to action---------------  */
 
-.cta-section{
+.section{
   width: 100%;
   padding: 100px 0px 100px;
   background-image: url('/icons/Vector.png');

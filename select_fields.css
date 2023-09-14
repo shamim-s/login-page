@@ -1,0 +1,115 @@
+.slect-fields-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.section {
+  width: 100%;
+  padding: 100px 0px 100px;
+  background-image: url("/icons/Vector.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-heaidng {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* to remove default select field box arrow  */
+
+/* .select {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+}
+
+.field-icon {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  z-index: 999;
+}
+
+.select::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 99;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #333;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.select.active::before {
+  top: 22px;
+  transform: rotate(-225deg);
+}
+
+.select input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid rgb(194, 194, 194);
+  outline: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+  padding-left: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.select .option {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+.select .active {
+  display: block;
+}
+
+.select .option div {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.select .option div:hover {
+  background: #cabb78;
+  color: #fff;
+} */
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+.select-filed{
+  max-width: 200px;
+}
+.select-filed select{
+  font-size: 16px;
+  padding: 10px 30px;
+  width: 200px;
+  height: 45px;
+}
