@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="Login.css" />
+    <script
+      src="https://kit.fontawesome.com/2b79e71427.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="form-wrapper">
+        <form action="" class="form">
+          <h1 class="form-heading">Welcome Back</h1>
+          <h4 class="form-sub_heading">Login to access your account</h4>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              class="input-field"
+              name=""
+              id=""
+              placeholder="User name"
+            />
+            <img src="/icons/user.png" class="icon-left user" alt="">
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              class="input-field"
+              name=""
+              id=""
+              placeholder="Password"
+            />
+            <img src="/icons/lock.png" class="icon-left lock" alt="">
+            <img src="/icons/view.png" class="icon-right view" alt="">
+          </div>
+          <div class="flex-wrapper">
+            <div class="chckbox-wrapper">
+              <input type="checkbox" id="html">
+              <label for="html">Remember me</label>
+            </div>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <button type="submit" class="submit-btn">Login now</button>
+          <p class="register_link">Not register? Click here Signup</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- call to action  -->
+    <section class="cta-section">
+        <div class="container">
+          <div class="cta-wrapper">
+              <div class="flex-item">
+                <img src="/icons/logo.png" class="cta-logo" alt="">
+                <p>Join our newsletter and receive the best job openings of the week, right on your inbox.</p>
+              </div>
+              <form action="" class="flex-item cta-form">
+                <input type="email" name="" class="cta-input" id="" placeholder="Subscribe to our newsletter">
+                <button type="submit" class="cta-btn">Subscribe</button>
+              </form>
+          </div>
+        </div>
+    </section>
+  </body>
+</html>
